@@ -55,19 +55,18 @@ class PixivSpider:
 
         self.cookie_header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
-            'cookie': "irst_visit_datetime_pc=2022-09-08+22%3A49%3A28; p_ab_id=5; p_ab_id_2=9; p_ab_d_id=361732582; yuid_b=JkZCEGU; __utmz=235335808.1662644970.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _fbp=fb.1.1662644971312.667664842; PHPSESSID=81243320_sMaZZse2RZMg4H2GW7bXNJtfpWVP0GFS; device_token=174673729283893a44b05ad30e08b3bf; c_type=9; privacy_policy_notification=0; a_type=0; b_type=1; _im_vid=01GCEP61KDRXMB06MJP65GT263; _im_uid.3929=i.siaaAacmQUm8VfV3qLFlKg; login_ever=yes; __utmv=235335808.|2=login%20ever=yes=1^3=plan=normal=1^5=gender=male=1^6=user_id=81243320=1^9=p_ab_id=5=1^10=p_ab_id_2=9=1^11=lang=zh=1; _gid=GA1.2.1286714960.1663858970; __cf_bm=RxuL0tVT0U7HeC66fua8PrmcQdkm2kHi4Bm_ea5MkLY-1663858971-0-Adnm17f8rcHlAFnC6uGOfKTCaLD0rdDZt6bSnE1IxbEV6d+nM6fWQ/IAYbnJZl/x5XDkovQ6uh6cPFH6dY4ExYnjTJID+m1tWfz0JlCMjY/zlK/HkWotjV5Jna3ohtmJV6aKFYugg0aUg2xGmla/Ia4+hzCNLZ5avbIvxTBpZMMPTQKhuk6uHLzzeYbQGNBtXA==; __utma=235335808.1297637551.1662644969.1662644970.1663858975.2; __utmc=235335808; __utmt=1; QSI_S_ZN_5hF4My7Ad6VNNAi=v:0:0; privacy_policy_agreement=5; _ga=GA1.2.1297637551.1662644969; __utmb=235335808.8.10.1663858975; cto_bundle=stf7yl9QVTZDcTNWUFIxNWhDOU5qTnZPTHh0SlpxWHUzZ0FNZ3BwMFlSS3BXSFBNQ0g2aFEyZE5KeThMV25vQUJXd3FpcnNtSkFuRWQlMkJaUG5zUkc4MGo2WElZMlBibVhPNTRzS2NsbnpoaHB1Mmk0VG1RdndEa2NqYXpOamlMTWI4NENSc2JnJTJCWiUyQlBkdDlZMFR3Z3VWQnpoTnclM0QlM0Q; _ga_75BBYNYN9J=GS1.1.1663858974.2.1.1663859152.0.0.0"
+            'cookie' : '记得补充'
         }
-        # 模拟登录的data
+        # 模拟登录的data 
         self.pixiv_id = ''
         self.password = ''
         self.post_key = []
         self.source = 'pc'
         self.return_to = 'https://www.pixiv.net/'
-        self.recaptcha_enterprise_score_token = '03AGdBq27reTb5aiAclEIsFwSYG7O4ipWYLg8B0oRq2ibebDXxzZfqYT_EnRV9jdLJ1VilPZOE30AKEohyBJWBW8SKr9fc4jwpF1zH9mcRXveIP9s6X8UGRn_anM3FjrQuirOq5gzzNQDDmzICMlijlWnYn_q-U_q8Kg-SVSS0ITL8_zdfGvuoM0pTeZYMn51F3-nkcY8GnHzoZNC0PyBqdIVl1pTbzYQ5Cmxu2Bvcd46sW_kLFAg9ChgufxhU-FZ67f2DXepKbVeWqiB-4iOLXLC8P5oTKA7o-tLywpShZIASzx9ynPsV3L-WXfeF5BTJppSrbXKaUqEl92qr-28bBzgGrk9590bdpL8AbduB18EO1RZr3hHSa5xbjqX4di_ilwdKgNrxP63SNur8B8ZDEvB43BeHpCC1pTaC5sbqqUaTex3W3BmGtk1_9a2_Qmg3RIEh5tyaL3_maeeEswboGkaDgvBNUF60wwvdsP_ScoNA6GTy1yqSK7JXI2Jao-FlfVkgnt9R7EyHFi_MySkBIH7LlhVsQPD10ScqHWZIxZ4jHlAqoT5etYt4oLICwcsfvW5pfgPMxWktrZLkoPYxedvmaQbWKQYqOwFDl0wiDsadD3GXYjbzXQfnazplpUz1AzCG4DWeC-3lK-PitbF5nQ9kEO7pKELWlLjk7_ZEHsMvgaR3r0d45ZqCzo1YsqskzGC0t5eA9Npz1aoTBYZFtQdzqzd2V4-soFVg_lcP4xmj_Kzoxj9oukhnNnvaVb1N10UJq5t5dJDKZYkSuTEX_wXOwLbh_g5UxGpM-1qUCFjGd5rx8-TgFJ4_ncFnbL_GJH26gimhBnNMPdY9WpGRvk1qKNHeo6hCgcL3xyftBD-Y-4awPFb54wAIX1Fdidj-n0jOFuf5_cVIBsrNCi95j9SNW-PTfc3sY6qY1GDZttJ1ykymJ2MQ5WNQk-9aLJp1L8Yrhqbz4LepgqXOtix_LO06Kr5mjB7pHQwhXgoePeuVGeEX6aTOCDRKizS2t01EdKS7k277n1PE-ft0jqOBtYR-cnh13vQoumJtaOdG4l1uyKhzXpWiG5ttrkQguXh56RNHwOjqcs6TxyNJzNNmMMYuP1_aOBhML2jGIQ8NnkICQyRxKXkQChHqXRSr4pVNgPrzEBsJ0M5TvCHhyc-4Ot8OfDaVyDRve5amsPCJERvhlxOYMjaMCgCqw9q7Z3MwOiDAGo_HGZU_wlB7nFP837-jg1p8_SdRZqeUoLRAPwgC5T07rctnukmTACo2yqwqeAJxabpJGUcdVrNjVqGKAyxx6zMH4RYRAO8GJSnb-wn624hmD3bALplu2R45yyypgbG5il2FeQUxJFUttt1Ak48tEk-ikVoe7LgP0nTMlY1B9NbuDtJcHXwpxGIweFIigLQKyIN85JXSFrqAZwLEz_io7N5hwglMPFPCgImQ1RtsVyAhV-e9hgsGZdBLjHgoi-PzBoim11BOrgbUxpOo_RptmT6CZaXgIClOvaVdAwdhIKZdg8j45FWWrKS44Y-6WPYYNVuS6p7r2LAbNDbKM_mP1FJEH7jm6R4z4lzfqciwRxlQFhbyt72kLl42jmYicj3_8GQgh7pjXwKH6nWQI2o_nENoAuO8Jb8Z_dT4n1A-kmPoWL1S9A4FPH1UtGxQ6LRtMtJiO2js5Yq7vLGoqNNHiwV4MB90h1LrKaf4WkWOd6ojgx1--58ynGz-QIEHWVClsnpJ21zi2XauVyDVxWyC_phOMnB6tQ'
         self.session = requests.session()  # 用于储存cookie应对无响应
         self.referer = 'https://www.pixiv.net/ranking.php?mode=monthly&content=illust'
 
-    # 登录
+    # 登录 无效
     def login(self):
         session = requests.session()
         login_html = self.session.get(url=self.login_url, headers=self.common_header, verify=False)
